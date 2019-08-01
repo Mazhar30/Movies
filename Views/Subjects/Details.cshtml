@@ -1,0 +1,30 @@
+﻿@model MvcMovie.Models.Subjects
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Subjects</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sub)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sub)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.mark)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.mark)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
